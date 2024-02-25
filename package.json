@@ -20,11 +20,15 @@
   },
   "scripts": {
     "start": "node server.js",
+    "dev": "nodemon",
     "server": "nodemon server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "proxy": "http://localhost:3001",
   "eslintConfig": {
@@ -44,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
