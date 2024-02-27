@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react'
 
 export default function App(){
-    /*
-    Login, SignUp, CreateBookmark, ListBookmarksByUser, DeleteBookmark, UpdateBookmark
-    */
-
    const handleChangeAuth = (event) => {
     setCredentials({...credentials, [event.target.name]: event.target.value })
    }
@@ -66,7 +62,7 @@ export default function App(){
                 body: JSON.stringify({...bookmark})
             })
             const data = await response.json() 
-            setBookmarks([data,...bookmarks])
+            setBookmarks([data, ...bookmarks])
         } catch (error) {
             console.error(error)
         } finally {
@@ -149,8 +145,8 @@ export default function App(){
         e.preventDefault()
         login()
     }}>
-        <input type="text" value={credentials.email} name="email" onChange={handleChangeAuth} placeholder={'Email Here'}></input>
-        <input type="password" value={credentials.password} name="password" onChange={handleChangeAuth} placeholder={'Password'}></input>
+        <input type="text" value={credentials.email} name="email" onChange={handleChangeAuth} placeholder={'Email'}></input>
+        <input type="password" value={credentials.password} name="password" onChange={handleChangeAuth} placeholder={'password'}></input>
         <input type="submit" value="Login as an Existing User"/>
     </form>
     <h2>SignUp</h2>
