@@ -1,0 +1,19 @@
+:root {
+    --text-light: #dae241;
+    --text-dark: #710cc8;
+    --text-black: #100f0e;
+}
+
+body {
+    margin: 0;
+    padding: 2vw;
+    height: 100vh;
+    background-image: url("https://i.imgur.com/gaQnH1z.jpeg");
+    background-color: rgb(141, 153, 152);
+    color: var(--text-black);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    background-size: cover;
+}

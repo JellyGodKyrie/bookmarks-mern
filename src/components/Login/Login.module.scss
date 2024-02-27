@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border: 1px solid var(--text-dark);
+    border-radius: .1vmin;
+    input {
+        font-size: 1.3vmin;
+        border-radius: .1vmin;
+        outline: none;
+        height: 3vmin;
+        margin-right: 1vmin;
+        padding: 0.5vmin;
+        border: 1px solid var(--text-light);
+    }
+}
